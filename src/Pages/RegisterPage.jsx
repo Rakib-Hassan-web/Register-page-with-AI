@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LuEye, LuEyeOff } from "react-icons/lu";
 import { Link } from "react-router";
 
 export default function RegisterPage() {
@@ -89,7 +90,7 @@ export default function RegisterPage() {
               onClick={() => setShowPassword((s) => !s)}
               className="absolute right-2 top-2 text-sm text-gray-500"
             >
-              {showPassword ? 'Hide' : 'Show'}
+              {showPassword ?  <LuEyeOff /> : <LuEye />  }
             </button>
           </div>
           {errors.password && <p className="text-xs text-red-500 mb-2">{errors.password}</p>}
