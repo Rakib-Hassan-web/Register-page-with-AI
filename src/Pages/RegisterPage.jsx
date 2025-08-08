@@ -61,7 +61,7 @@ export default function RegisterPage() {
           />
           {errors.username && <p className="text-xs text-red-500 mb-2">{errors.username}</p>}
 
-          <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <label className="block text-sm font-medium text-gray-700 mb-1  text-left">Email</label>
           <input
             name="email"
             value={form.email}
@@ -73,7 +73,7 @@ export default function RegisterPage() {
           />
           {errors.email && <p className="text-xs text-red-500 mb-2">{errors.email}</p>}
 
-          <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <label className="block text-sm font-medium text-gray-700 mb-1  text-left">Password</label>
           <div className="relative mb-2">
             <input
               name="password"
@@ -94,7 +94,7 @@ export default function RegisterPage() {
           </div>
           {errors.password && <p className="text-xs text-red-500 mb-2">{errors.password}</p>}
 
-          <label className="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+          <label className="block text-sm font-medium text-gray-700 mb-1  text-left">Confirm Password</label>
           <input
             name="confirmPassword"
             value={form.confirmPassword}
